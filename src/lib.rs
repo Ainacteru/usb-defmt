@@ -4,6 +4,7 @@ pub mod usb;
 pub mod defmt;
 pub mod timer;
 mod panic;
+pub mod time_driver;
 
 #[cfg(feature = "rt")]
 pub use cortex_m_rt::entry;

@@ -18,6 +18,11 @@ usbd-serial ={ version = "0.2.2", optional = true }
 
 defmt = { version = "1.1.0"}
 portable-atomic = { version = "1.13.1", features = ["critical-section"] }
+embassy-executor = { version = "0.10.0", features = ["defmt", "executor-thread", "platform-cortex-m"] }
+embassy-time = { version = "0.5.1", features = ["defmt", "tick-hz-1_000"] }
+critical-section = "1.2.0"
+embassy-time-driver = "0.2.2"
+bmp390-rs = "0.4.0"
 
 [features]
 default = ["rt", "usb", "atsamd-hal/samd21g"]
